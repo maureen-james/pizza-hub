@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -7,13 +9,19 @@
     background-color: black;
     color: white;
 } */
+.brandname{
+    font-family: 'Mansalva', cursive;
+}
 .nav-item{
     display: flex;
 }
 .nav-item ul{
     display: flex;
 }
-.nav-item ul li{
+.nav-list{
+    margin-left:200px ;
+}
+.nav-list ul li{
     padding: 50px 10px;
     text-decoration: none;
     list-style: none;
