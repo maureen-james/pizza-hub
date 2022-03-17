@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    background-color: black;
+    color: white;
+} */
+.nav-item{
+    display: flex;
+}
+.nav-item ul{
+    display: flex;
+}
+.nav-item ul li{
+    padding: 50px 10px;
+    text-decoration: none;
+    list-style: none;
+}
+.logo-img{
+    width: 100px;
+}
