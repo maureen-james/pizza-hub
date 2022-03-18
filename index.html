@@ -133,46 +133,53 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
           <div class="mb-3">
             <label for="flavour">Select your flavour:</label>
             <select id="flavour" class="form-select">
-                <option value="vegtikka">cheeseburger</option>
-                <option value="vegtikka">chicken-hawaiian</option>
-                <option value="vegtikka">chicken-macon-BBQ</option>
-                <option value="vegtikka">meat deluxe</option>
-                <option value="vegtikka">veg feast</option>
+                <option value="cheeseburger">cheeseburger</option>
+                <option value="chicken-hawaiian">chicken-hawaiian</option>
+                <option value="chicken-macon-BBQ">chicken-macon-BBQ</option>
+                <option value="meat-deluxe">meat-deluxe</option>
+                <option value="veg-feast">veg-feast</option>
             </select>
           </div>
         </div>
         <div class="col-md-6 order-overlay text-center">
             <div class="mb-3">
-              <label for="flavour">Select your pizza size:</label>
-              <select id="flavour" class="form-select">
-                  <option value="vegtikka">small @ 350</option>
-                  <option value="vegtikka">medium @ 650</option>
-                  <option value="vegtikka">large @ 1200</option>
+              <label for="size">Select your pizza size:</label>
+              <select id="size" class="form-select">
+                  <option value="small">small @ 350</option>
+                  <option value="medium">medium @ 650</option>
+                  <option value="large">large @ 1200</option>
               </select>
             </div>
           </div>
           <div class="col-md-6 order-overlay text-center">
             <div class="mb-3">
-              <label for="flavour">Select your pizza crust:</label>
-              <select id="flavour" class="form-select">
-                  <option value="vegtikka">thin crust @ 150</option>
-                  <option value="vegtikka">stuffed @ 250</option>
-                  <option value="vegtikka">crispy @ 300</option>
-                  <option value="vegtikka">gluten free crust @ 350</option>
-              </select>
-            </div>
-          </div><div class="col-md-6 order-overlay text-center">
-            <div class="mb-3">
-              <label for="flavour">Select your pizza topping(s):</label>
-              <select id="flavour" class="form-select">
-                  <option value="vegtikka">tomato @ Ksh. 50</option>
-                  <option value="vegtikka">spinach @ Ksh. 50</option>
-                  <option value="vegtikka">mushrooms @ Ksh. 50</option>
-                  <option value="vegtikka">bacon @ Ksh. 50</option>
-                  <option value="vegtikka">sausages @ Ksh. 50</option>
+              <label for="crust">Select your pizza crust:</label>
+              <select id="crust" class="form-select">
+                  <option value="thin">thin crust @ 150</option>
+                  <option value="stuffed">stuffed @ 250</option>
+                  <option value="crispy">crispy @ 300</option>
+                  <option value="gluten">gluten free crust @ 350</option>
               </select>
             </div>
           </div>
+          <div class="col-md-6 order-overlay text-center">
+            <div class="mb-3">
+              <label for="topping">Select your pizza topping(s):</label>
+              <select id="topping" class="form-select">
+                  <option value="tomato">tomato @ Ksh. 50</option>
+                  <option value="spinach">spinach @ Ksh. 50</option>
+                  <option value="mushrooms">mushrooms @ Ksh. 50</option>
+                  <option value="bacon">bacon @ Ksh. 50</option>
+                  <option value="sausages">sausages @ Ksh. 50</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 order-overlay text-center">
+            <div class="mb-3">
+              <label for="number">Select Number of Pizza's to be ordered</label>
+                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+            </div>
+        </div>
         </div>
 
           <button type="submit" class="btn">CHECKOUT</button>
@@ -190,6 +197,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
             <input type="text" class="form-control cdata" placeholder="Enter the location: ">
             <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
         </form>
+    </div>
+
+    <div class="d-block mx-auto text-center">
+        <button class='deliver'>Make Delivery</button>
+        <button class='delivernot'>Pick Up</button>
     </div>
 
     </div>

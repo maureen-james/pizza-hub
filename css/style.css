@@ -116,3 +116,6 @@ h5{
 .customerdata{
     padding-left: 450px;
 }
+.summary{
+    display: none;
+}
