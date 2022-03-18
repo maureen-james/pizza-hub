@@ -84,10 +84,17 @@
 .menu{
     padding-top: 50px;
     text-align: center;
+    padding-bottom: 50px;
+    background-color:orange;
 }
 h5{
     text-align: center;
 }
 .carousel-item{
+    padding-top: 50px;
     padding-left: 700px;
+}
+.orders{
+    text-align: center;
+    padding-top: 100px;
 }
