@@ -11,9 +11,17 @@
 } */
 .brandname{
     font-family: 'Mansalva', cursive;
+    color: orange;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 350%;
+    font-style: italic;
 }
 .nav-item{
     display: flex;
+}
+.nav{
+    background-color: black;
 }
 .nav-item ul{
     display: flex;
@@ -29,12 +37,46 @@
 .logo-img{
     width: 100px;
 }
-.landing{
+.home{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/pizzab.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .home{
     text-align: center;
+    background-image: linear-gradient(101deg,#131212 42%, #f6b400 0%);
+    color: white;
+} */
+.landing-text{
+    padding-right: 60px;
+    padding-top: 200px;
+    color: white;
+    font-size: 300%;
+    font-style: italic;
+    font-weight: 600;
+}
+.landing{
+    display: flex;
+    margin-left: 500px;
+}
+.btn{
+    padding-right: 50px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 30px 30px 0px 30px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 40px;
 }
 .icons{
-    padding-top: 50px;
+    padding-top: 200px;
+    text-align: center;
 }
 .fab{
     padding-left: 50px;
+    height: 50px;
+}
+.linear-image{
+    height: 500px;
+    width: 50%;
 }
