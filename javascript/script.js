@@ -244,7 +244,7 @@ let price, totalPrice;
                         console.log(newOrder);  
 
                         $('.summary').slideDown(1000);
-                        $('.cdata-overlay').slideUp();
+                        $('.customerdata').slideUp();
                         $('#list').slideDown();
                         $('.deliver').show(500);
                         $('.delivernot').show(500);
@@ -264,7 +264,7 @@ let price, totalPrice;
                         $('.summary').text("Provide location details").slideDown();
                         $('.deliver').hide(500);
                         $('.delivernot').hide(500);
-                        $('.cdata-overlay').slideDown();
+                        $('.customerdata').slideDown();
                     });
                     $(".delivernot").click(function () {
                         alert("Thank you for your purchase!!!")
