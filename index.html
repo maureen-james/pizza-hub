@@ -127,23 +127,59 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
 </div>
 <div class="orders">
     <h1>ORDER PIZZA</h1>
-    <div class="form-group row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 order-overlay text-center">
-            <form class="col-sm-6 offset-sm-3 text-center">
-                <label>Select your pizza Flavour:</label>
-                <select class="custom-select custom-select-md mb-3 flavour" required>
-                    <option value="vegtikka">Veg Tikka</option>
-                    <option value="vegtikka">Veg Tikka</option>
-                    <option value="vegtikka">Veg Tikka</option>
-                    <option value="vegtikka">Veg Tikka</option>
-                    <option value="vegtikka">Veg Tikka</option>
-                </select>
-            </form>
+    <form>
+          <div class="form-layers">
+          <div class="col-md-6 order-overlay text-center">
+          <div class="mb-3">
+            <label for="flavour">Select your flavour:</label>
+            <select id="flavour" class="form-select">
+                <option value="vegtikka">cheeseburger</option>
+                <option value="vegtikka">chicken-hawaiian</option>
+                <option value="vegtikka">chicken-macon-BBQ</option>
+                <option value="vegtikka">meat deluxe</option>
+                <option value="vegtikka">veg feast</option>
+            </select>
+          </div>
         </div>
+        <div class="col-md-6 order-overlay text-center">
+            <div class="mb-3">
+              <label for="flavour">Select your pizza size:</label>
+              <select id="flavour" class="form-select">
+                  <option value="vegtikka">small @ 350</option>
+                  <option value="vegtikka">medium @ 650</option>
+                  <option value="vegtikka">large @ 1200</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 order-overlay text-center">
+            <div class="mb-3">
+              <label for="flavour">Select your pizza crust:</label>
+              <select id="flavour" class="form-select">
+                  <option value="vegtikka">thin crust @ 150</option>
+                  <option value="vegtikka">thick crust @ 250</option>
+                  <option value="vegtikka">flat bread crust @ 300</option>
+                  <option value="vegtikka">cracker crust @ 350</option>
+              </select>
+            </div>
+          </div><div class="col-md-6 order-overlay text-center">
+            <div class="mb-3">
+              <label for="flavour">Select your pizza topping(s):</label>
+              <select id="flavour" class="form-select">
+                  <option value="vegtikka">tomato @ Ksh. 80</option>
+                  <option value="vegtikka">spinach @ Ksh. 80</option>
+                  <option value="vegtikka">mushrooms @ Ksh. 80</option>
+                  <option value="vegtikka">bacon @ Ksh. 80</option>
+                  <option value="vegtikka">sausages @ Ksh. 80</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+          <button type="submit" class="btn">Submit</button>
+    
+      </form>
     </div>
 
-</div>
         
 
     
