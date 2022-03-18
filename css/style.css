@@ -33,6 +33,7 @@
     padding: 50px 10px;
     text-decoration: none;
     list-style: none;
+    font-weight: bold;
 }
 .logo-img{
     width: 100px;
@@ -79,4 +80,14 @@
 .linear-image{
     height: 500px;
     width: 50%;
+}
+.menu{
+    padding-top: 50px;
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+.carousel-item{
+    padding-left: 700px;
 }
