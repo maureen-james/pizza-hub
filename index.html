@@ -165,19 +165,35 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
             <div class="mb-3">
               <label for="flavour">Select your pizza topping(s):</label>
               <select id="flavour" class="form-select">
-                  <option value="vegtikka">tomato @ Ksh. 80</option>
-                  <option value="vegtikka">spinach @ Ksh. 80</option>
-                  <option value="vegtikka">mushrooms @ Ksh. 80</option>
-                  <option value="vegtikka">bacon @ Ksh. 80</option>
-                  <option value="vegtikka">sausages @ Ksh. 80</option>
+                  <option value="vegtikka">tomato @ Ksh. 50</option>
+                  <option value="vegtikka">spinach @ Ksh. 50</option>
+                  <option value="vegtikka">mushrooms @ Ksh. 50</option>
+                  <option value="vegtikka">bacon @ Ksh. 50</option>
+                  <option value="vegtikka">sausages @ Ksh. 50</option>
               </select>
             </div>
           </div>
         </div>
 
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn">CHECKOUT</button>
       </form>
+    
+    <div class="summary">
+        <h1>ORDER SUMMARY</h1>
+        <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+        <ol id="list" class="text-center sum">
+        </ol>
+        <div class="customerdata">
+        <form action="" class="form-group col-sm-6 data">
+            <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+            <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+            <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+            <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+        </form>
     </div>
+
+    </div>
+</div>
 
 
     <div class="contact">
@@ -190,7 +206,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
                     
 
                     <label for="mailForm">E-Mail</label><br>
-                    <input type="email" name="mail" id="mailForm" placeholder="E-mail Required" required> <br>
+                    <input type="email" name="mail" id="mailForm" placeholder="example@gmail.com" required> <br>
                 
 
                     <label for="contentForm" required>Message</label> <br>
@@ -207,7 +223,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
         <!-- Copyright -->
         <div class="text-center text-light p-3" style="background-color: #083111;">
           © 2022 Copyright:
-          <a style="background-color: inherit;" class="text-light" href="#">PIZZA HUB</a>
+          <a style="background-color: inherit;" class="text-light" href="#">pizza hub</a>
         </div>
         <!-- Copyright -->
       </footer>
