@@ -104,3 +104,10 @@ h5{
 .form-layers{
     padding-left: 450px;
 }
+.contact-form{
+    padding-left: 450px;
+    background-image: url(../images/pizzc.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+}
