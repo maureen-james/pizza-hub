@@ -268,6 +268,7 @@ $(function () {
         $('.deliverhome').hide(1000);
         $('.delivernot').hide(1000);
         $('.cdata-overlay').slideDown();
+        prompt("do you want pizza home delivery services?")
     
     });
     $(".deliver").click(function () {

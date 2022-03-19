@@ -118,9 +118,9 @@ h5{
     background-color: #000;
     color: white;
 }
-/* .form-layers{
+ .form-layers{
     padding-left: 450px;
-} */
+} 
 .contact-form{
     background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/piz.jpg);
     background-size: cover;
@@ -141,63 +141,42 @@ h5{
     border-radius: 30px 30px 0px 30px;  
  }
 
- @media (min-width: 1400){
-    .carousel-item{
-        padding-left: 625px;
-    }
- }
+ 
 
- @media (max-width: 740px){
+ /* @media (max-width: 740px){
         .landing{
-            margin-left: 230px;
+            margin-left: 20px;
         }
-        .carousel-item{
-            padding-left: 90px;
-            padding-top: 5px;
-            height:150vh ;
-            padding-right: 75px;
-        }
-        .form-layers{
-            padding-left: 95px;
-        }
+      
+       
     }
     @media (max-width: 850px){
-     .landing{
-         margin-left: 80px;
-     }
-     .carousel-item{
-         padding-left: 100px;
-         height:100vh ;
-     }
-     .form-layers{
-        padding-left: 25px;
-      }
-   }
+   } */
    @media (max-width: 1060px){
-     .landing{
-         margin-left: 150px;
-     }
+    
      .carousel-item{
-         padding-left: 200px;
-         height:100vh ;
+         height:72vh ;
      }
-     .form-layers{
-        padding-left: 281px;
-      }
+    
    }
    @media (max-width: 1200px){
     .carousel-item{
-        padding-left: 550px;
+        padding-left: 295px;
     }
     .landing-text{
         text-align: center;
     }
     .landing{
-        margin-left: 350px;
+        margin-left: 110px;
     }
     .form-layers{
-        padding-left: 200px;
+        padding-left: 55px;
       }
    }
+   @media (min-width: 1400){
+    .carousel-item{
+        padding-left: 625px;
+    }
+}
 
    
