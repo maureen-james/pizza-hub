@@ -1,7 +1,8 @@
+
 $(function () {
     $('.summary').hide();
     $('.cdata-overlay').hide();
-//Get inputs
+
     $("#checkout").click(function () {
         let flavour = $(".flavour option:selected").val();
         let size = $("#size option:selected").val();
@@ -10,12 +11,12 @@ $(function () {
         let number = $("#number").val();
         console.log(size);
 
-        //Function order
+    
         let order = (f, s, c, t, n, total) => {
             return {f, s, c, t, n, total};
         };
 
-        //check price
+    
         let price, totalPrice;
         switch (flavour) {
             case flavour = "cheeseburger":
@@ -238,14 +239,12 @@ $(function () {
  
         }
 
-        //Execute order function
+        
         let newOrder = order(flavour, size, crust, topping, number, totalPrice);
-        console.log(newOrder); // test func
+        console.log(newOrder); 
 
-        //create a new object
-        // let myOrder = JSON.stringify(JSON.parse(newOrder));
-
-        //Write to the order
+       
+        // order output
         $('.summary').slideDown(2000);
         $('.cdata-overlay').slideUp();
         $('#list').slideDown();
@@ -258,10 +257,10 @@ $(function () {
             + newOrder.c + "<br>" + "Toppings :     "
             + newOrder.t + "<br>" + " Number of pizzas :    "
             + newOrder.n + "<br>" + "Total Price :  "
-            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+            + newOrder.total + "<br><br>").css('font-family', 'Mansalva').css('font-size', '24px');
     });
 
-    //Deliver
+
     $(".deliverhome").click(function () {
         $('.summary').slideUp();
         $('#list').slideUp();
@@ -269,19 +268,19 @@ $(function () {
         $('.deliverhome').hide(1000);
         $('.delivernot').hide(1000);
         $('.cdata-overlay').slideDown();
-    //   alert("Your order will be delivered to your location.Please prepare ksh 150 for delivery.")
+    
     });
     $(".deliver").click(function () {
         alert("Your order will be delivered to your location.Please prepare ksh 150 for delivery.")
     });
 
 
-    //Pick Up
+    
     $(".delivernot").click(function () {
      alert("Thank you for shopping with us")
     });
 
-    //Scrollify
+    
     $(function () {
         $.scrollify.move('#sum-order');
     });

@@ -21,14 +21,25 @@
     display: flex;
 }
 .nav{
-    background-color: transparent;
-    position: fixed;
+    background-color: black
 }
+.nav li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: burlywood;
+    font-size: 24px;
+
+}
+.nav a:hover {
+    background-color: rgb(221, 221, 221);
+    color: black;
+  }
 .nav-item ul{
     display: flex;
 }
 .nav-list{
     margin-left:200px ;
+    cursor: pointer;
 }
 .nav-list ul li{
     padding: 50px 10px;
