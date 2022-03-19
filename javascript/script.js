@@ -7,10 +7,13 @@ function Getpizza( name,size,crust,topping, total ){
   this.topping = topping;
   this.total = total;
 }
+$(function () {
+    $('.summary').hide();
+    $('.cdata-overlay').hide();
 // $(document).ready(function(){
  $(function(){
     $('.summary').hide();
-    $('.cdata-overlay').hide();
+    $('.customerdata').hide();
     $("#checkout").click(function(){
         let flavour = $(".flavour option:selected").val();
         let size = $("#size option:selected").val();
@@ -251,9 +254,9 @@ let price, totalPrice;
                 
                         $('#list').text(" ");
                         $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
-                            + newOrder.s + "<br>" + "Crust :     "
-                            + newOrder.c + "<br>" + "Toppings :     "
-                            + newOrder.t + "<br>" + " Number of pizzas :    "
+                            + newOrder.s + "<br>" + "Crust : "
+                            + newOrder.c + "<br>" + "Toppings :  "
+                            + newOrder.t + "<br>" + " Number of pizzas :  "
                             + newOrder.n + "<br>" + "Total Price :  "
                             + newOrder.total + "<br><br>").css('font-family', 'Mansalva').css('font-size', '24px');
                     });
@@ -261,10 +264,11 @@ let price, totalPrice;
                     $(".deliver").click(function () {
                         $('.summary').slideUp();
                         $('#list').slideUp();
-                        $('.summary').text("Provide location details").slideDown();
+                        $('.summary').text("Provide your location details").slideDown();
                         $('.deliver').hide(500);
                         $('.delivernot').hide(500);
                         $('.customerdata').slideDown();
+                        alert("delivery will be in 15 minutes. Thank you for chhosing pizza hub")
                     });
                     $(".delivernot").click(function () {
                         alert("Thank you for your purchase!!!")
