@@ -30,17 +30,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
             </div>
             <div class="nav-list">
              <ul>
-                 <li><a href="">HOME</a></li>
-                 <li><a href="">MENU</a></li>
-                 <li><a href="">ORDERS</a></li>
-                 <li><a href="">CONTACT US</a></li>
+                 <li><a href="#home">HOME</a></li>
+                 <li><a href="#menu">MENU</a></li>
+                 <li><a href="#orders">ORDERS</a></li>
+                 <li><a href="#contact">CONTACT US</a></li>
              </ul>
             </div>
         </div>
 
     </div>
 
-        <div class="home">
+        <div id="home">
             <div class="landing">
                 <div class="landing-text">
                 <p>
@@ -48,7 +48,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
                     DON'T WAIT! <br>
                     GET YOUR PIZZA NOW!
                 </p>
-                <button type="menu" class="btn">ORDER NOW</button>
+                <a href="#orders"><button type="menu" class="btn">ORDER NOW</button></a>
             </div>
                 <!-- <div class="linear-image">
                     <img src="images/piz1.jpeg" alt="" class="linear-image">
@@ -65,7 +65,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
                 </div>
          </div>
     
-        <div class="menu"> 
+        <div id="menu"> 
             <h1>OUR MENU</h1>
         <div id="carousel slide carousel-multi-item" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -125,14 +125,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
     </div> 
   </div>
 </div>
-<div class="orders" id="sum-order">
+<div id ="orders" id="sum-order">
     <h1>ORDER PIZZA</h1>
     <form>
           <div class="form-layers">
           <div class="col-md-6 order-overlay text-center">
           <div class="mb-3">
             <label for="flavour">Select your flavour:</label>
-            <select id="flavour" class="form-select">
+            <select  class="form-select flavour">
                 <option value="cheeseburger">cheeseburger</option>
                 <option value="chicken-hawaiian">chicken-hawaiian</option>
                 <option value="chicken-macon-BBQ">chicken-macon-BBQ</option>
@@ -186,13 +186,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
       <a href="#summary">
           <button type="submit" class="btn" id="checkout">CHECKOUT</button>
           </a>
+       
     
     
-    <div class="summary">
+    <!-- <div id="summary">
         <h1>ORDER SUMMARY</h1>
         <h2 class="text-center summary">Hello there, your order is as follows:</h2>
         <ol id="list" class="text-center sum">
         </ol>
+
+    <div class="cdata-overlay">
         <div class="customerdata">
         <form action="" class="form-group col-sm-6 data">
             <input type="text" class="form-control cdata" placeholder="Enter your Name:">
@@ -208,10 +211,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
     </div>
 
     </div>
+</div> -->
+<div class="order-summary" id="sum-order">
+    <h1 class="text-center" id="summary">Order Summary</h1>
+    <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+    <ol id="list" class="text-center sum">
+    </ol>
+
+    <div class="d-block mx-auto text-center">
+        <button class='btn bg-info text-center d-block mx-auto go deliverhome'>HOME Delivery</button>
+        <button class='btn bg-info text-center d-block mx-auto go delivernot'>Pick Up</button>
+    </div>
+    <div class="cdata-overlay">
+        <div class="customerdata row">
+            <div class="col-sm-3"></div>
+            <form action="" class="form-group col-sm-6 data">
+                <input type="text" class="form-control cdata" placeholder="Enter your Name:" required>
+                <input type="number" class="form-control cdata" placeholder="Enter your phone number: " required>
+                <input type="text" class="form-control cdata" placeholder="Enter the location: " required>
+                <button class="btn bg-info text-center d-block mx-auto go deliver">Make Delivery</button>
+            </form>
+
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <!-- <div class="d-block mx-auto text-center">
+        <button class='btn bg-info text-center d-block mx-auto go deliverhome'>HOME Delivery</button>
+        <button class='btn bg-info text-center d-block mx-auto go delivernot'>Pick Up</button>
+    </div> -->
+</div>
 </div>
 
 
-    <div class="contact">
+    <div id="contact">
         <div class="contact-form">
             <h2>CONTACT US</h2>
             <h6>We love feedback <br> Contact us through the form below</h6>
@@ -249,4 +281,5 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="javascript/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </html>

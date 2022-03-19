@@ -21,7 +21,8 @@
     display: flex;
 }
 .nav{
-    background-color: black;
+    background-color: transparent;
+    position: fixed;
 }
 .nav-item ul{
     display: flex;
@@ -38,7 +39,7 @@
 .logo-img{
     width: 100px;
 }
-.home{
+#home{
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/pizzab.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,7 +82,7 @@
     height: 500px;
     width: 50%;
 }
-.menu{
+#menu{
     padding-top: 50px;
     text-align: center;
     padding-bottom: 50px;
@@ -95,7 +96,7 @@ h5{
     padding-top: 50px;
     padding-left: 700px;
 }
-.orders{
+#orders{
     text-align: center;
     padding: 100px;
     background-color: #000;
@@ -116,6 +117,10 @@ h5{
 .customerdata{
     padding-left: 450px;
 }
-/* .summary{
-    display: none;
-} */
+ .order-summary{
+    margin-top: 30px;
+} 
+.deliver .delivernot{
+    border: 1px solid orange;
+    border-radius: 30px 30px 0px 30px;  
+}

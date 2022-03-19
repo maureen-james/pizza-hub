@@ -1,20 +1,8 @@
-var price , crust_price, topping_price ;
-let total = 0;
-function Getpizza( name,size,crust,topping, total ){
-  this.name = name;
-  this.size = size;
-  this.crust = crust;
-  this.topping = topping;
-  this.total = total;
-}
 $(function () {
     $('.summary').hide();
     $('.cdata-overlay').hide();
-// $(document).ready(function(){
- $(function(){
-    $('.summary').hide();
-    $('.customerdata').hide();
-    $("#checkout").click(function(){
+//Get inputs
+    $("#checkout").click(function () {
         let flavour = $(".flavour option:selected").val();
         let size = $("#size option:selected").val();
         let crust = $("#crust option:selected").val();
@@ -22,17 +10,55 @@ $(function () {
         let number = $("#number").val();
         console.log(size);
 
-        let order = (flavour, size, crust, topping, number, total) => {
-            return {flavour, size, crust, topping, number, total};
-        }; 
-    });
-});
-// });
-//     get price
+        //Function order
+        let order = (f, s, c, t, n, total) => {
+            return {f, s, c, t, n, total};
+        };
 
-let price, totalPrice;
+        //check price
+        let price, totalPrice;
         switch (flavour) {
             case flavour = "cheeseburger":
+                switch (size) {
+                    case size = "small":
+                        price = 350;
+                        if (crust === "thin") {
+                            totalPrice = (price * number) + 150;
+                        } else if (crust === "stuffed") {
+                            totalPrice = (price * number) + 250;
+                        } else if (crust === "crispy") {
+                            totalPrice = (price * number) + 300;
+                        } else {
+                            totalPrice = (price * number) + 350;
+                        }
+                        break;
+                    case size = "medium":
+                        price = 650;
+                        if (crust === "thin") {
+                            totalPrice = (price * number) + 150;
+                        } else if (crust === "sttuffed") {
+                            totalPrice = (price * number) + 250;
+                        } else if (crust === "crispy") {
+                            totalPrice = (price * number) + 300;
+                        } else {
+                            totalPrice = (price * number) + 350;
+                        }
+                        break;
+                    case size = "large":
+                        price = 1200;
+                        if (crust === "thin") {
+                            totalPrice = (price * number) + 150;
+                        } else if (crust === "stuffed") {
+                            totalPrice = (price * number) + 250;
+                        } else if (crust === "crispy") {
+                            totalPrice = (price * number) + 300;
+                        } else {
+                            totalPrice = (price * number) + 350;
+                        }
+                        break;
+                }
+                break;
+            case flavour = "chicken-hawaiian":
                 switch (size) {
                     case size = "small":
                         price = 350;
@@ -59,21 +85,7 @@ let price, totalPrice;
                         }
                         break;
                     case size = "large":
-                            price = 1200;
-                            if (crust === "thin") {
-                                totalPrice = (price * number) + 150;
-                            } else if (crust === "stuffed") {
-                                totalPrice = (price * number) + 250;
-                            } else if (crust === "crispy") {
-                                totalPrice = (price * number) + 300;
-                            } else {
-                                totalPrice = (price * number) + 350;
-                            } break;
-                        }
-            case flavour = "chicken-hawaiian":
-                          switch (size) {
-                          case size = "small":
-                          price = 350;
+                        price = 1200;
                         if (crust === "thin") {
                             totalPrice = (price * number) + 150;
                         } else if (crust === "stuffed") {
@@ -84,30 +96,8 @@ let price, totalPrice;
                             totalPrice = (price * number) + 350;
                         }
                         break;
-                    case size = "medium":
-                        price = 650;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "stuffed") {
-                            totalPrice = (price * number) + 250;
-                        } else if (crust === "crispy") {
-                            totalPrice = (price * number) + 300;
-                        } else {
-                            totalPrice = (price * number) + 350;
-                        }
-                        break;
-                        case size = "large":
-                            price = 1200;
-                            if (crust === "thin") {
-                                totalPrice = (price * number) + 150;
-                            } else if (crust === "stuffed") {
-                                totalPrice = (price * number) + 250;
-                            } else if (crust === "crispy") {
-                                totalPrice = (price * number) + 300;
-                            } else {
-                                totalPrice = (price * number) + 350;
-                            } break;
-                        }
+                }
+                break;
             case flavour = "chicken-macon-BBQ":
                 switch (size) {
                     case size = "small":
@@ -134,18 +124,20 @@ let price, totalPrice;
                             totalPrice = (price * number) + 350;
                         }
                         break;
-                        case size = "large":
-                            price = 1200;
-                            if (crust === "thin") {
-                                totalPrice = (price * number) + 150;
-                            } else if (crust === "stuffed") {
-                                totalPrice = (price * number) + 250;
-                            } else if (crust === "crispy") {
-                                totalPrice = (price * number) + 300;
-                            } else {
-                                totalPrice = (price * number) + 350;
-                            } break;
+                    case size = "large":
+                        price = 1200;
+                        if (crust === "thin") {
+                            totalPrice = (price * number) + 150;
+                        } else if (crust === "stuffed") {
+                            totalPrice = (price * number) + 250;
+                        } else if (crust === "crispy") {
+                            totalPrice = (price * number) + 300;
+                        } else {
+                            totalPrice = (price * number) + 350;
                         }
+                        break;
+                }
+                break;
             case flavour = "meat-deluxe":
                 switch (size) {
                     case size = "small":
@@ -163,6 +155,18 @@ let price, totalPrice;
                     case size = "medium":
                         price = 650;
                         if (crust === "thin") {
+                            totalPrice = (price * number) + 100;
+                        } else if (crust === "stuffed") {
+                            totalPrice = (price * number) + 150;
+                        } else if (crust === "crispy") {
+                            totalPrice = (price * number) + 180;
+                        } else {
+                            totalPrice = (price * number) + 280;
+                        }
+                        break;
+                    case size = "large":
+                        price = 1200;
+                        if (crust === "thin") {
                             totalPrice = (price * number) + 150;
                         } else if (crust === "stuffed") {
                             totalPrice = (price * number) + 250;
@@ -172,18 +176,8 @@ let price, totalPrice;
                             totalPrice = (price * number) + 350;
                         }
                         break;
-                        case size = "large":
-                            price = 1200;
-                            if (crust === "thin") {
-                                totalPrice = (price * number) + 150;
-                            } else if (crust === "stuffed") {
-                                totalPrice = (price * number) + 250;
-                            } else if (crust === "crispy") {
-                                totalPrice = (price * number) + 300;
-                            } else {
-                                totalPrice = (price * number) + 350;
-                            } break;
-                        }
+                }
+                break;
             case flavour = "veg-feast":
                 switch (size) {
                     case size = "small":
@@ -192,7 +186,7 @@ let price, totalPrice;
                             totalPrice = (price * number) + 150;
                         } else if (crust === "stuffed") {
                             totalPrice = (price * number) + 250;
-                        } else if (crust === "crispy") {
+                        } else if (crust === "cripsy") {
                             totalPrice = (price * number) + 300;
                         } else {
                             totalPrice = (price * number) + 350;
@@ -210,71 +204,85 @@ let price, totalPrice;
                             totalPrice = (price * number) + 350;
                         }
                         break;
-                        case size = "large":
-                            price = 1200;
-                            if (crust === "thin") {
-                                totalPrice = (price * number) + 150;
-                            } else if (crust === "stuffed") {
-                                totalPrice = (price * number) + 250;
-                            } else if (crust === "crispy") {
-                                totalPrice = (price * number) + 300;
-                            } else {
-                                totalPrice = (price * number) + 350;
-                            } break;
+                    case size = "large":
+                        price = 1200;
+                        if (crust === "thin") {
+                            totalPrice = (price * number) + 150;
+                        } else if (crust === "stuffed") {
+                            totalPrice = (price * number) + 250;
+                        } else if (crust === "crispy") {
+                            totalPrice = (price * number) + 300;
+                        } else {
+                            totalPrice = (price * number) + 350;
                         }
-                    }
-                
-                    switch (topping) {
-                        case topping = "tomato":
-                            totalPrice = totalPrice + 50;
-                            break;
-                        case topping = "spinach":
-                            totalPrice = totalPrice + 50;
-                            break;
-                        case topping = "mushrooms":
-                            totalPrice = totalPrice + 50;
-                            break;
-                        case topping = "bacon":
-                            totalPrice = totalPrice + 50;
-                            break;
-                        case topping = "sausages":
-                            totalPrice = totalPrice + 50;
-                            break;
-                        
-                        }
-      
-     let newOrder = order(flavour, size, crust, topping, number, totalPrice);
-                        console.log(newOrder);  
+                        break;
+                }
+                break;
+        }
+        switch (topping) {
+            case topping = "tomato":
+                totalPrice = totalPrice + 50;
+                break;
+            case topping = "spinach":
+                totalPrice = totalPrice + 50;
+                break;
+            case topping = "mushrooms":
+                totalPrice = totalPrice + 50;
+                break;
+            case topping = "bacon":
+                totalPrice = totalPrice + 50;
+                break;
+            case topping = "sausages":
+                totalPrice = totalPrice + 50;
+                break;
+ 
+        }
 
-                        $('.summary').slideDown(1000);
-                        $('.customerdata').slideUp();
-                        $('#list').slideDown();
-                        $('.deliver').show(500);
-                        $('.delivernot').show(500);
-                
-                        $('#list').text(" ");
-                        $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
-                            + newOrder.s + "<br>" + "Crust : "
-                            + newOrder.c + "<br>" + "Toppings :  "
-                            + newOrder.t + "<br>" + " Number of pizzas :  "
-                            + newOrder.n + "<br>" + "Total Price :  "
-                            + newOrder.total + "<br><br>").css('font-family', 'Mansalva').css('font-size', '24px');
-                    });
+        //Execute order function
+        let newOrder = order(flavour, size, crust, topping, number, totalPrice);
+        console.log(newOrder); // test func
 
-                    $(".deliver").click(function () {
-                        $('.summary').slideUp();
-                        $('#list').slideUp();
-                        $('.summary').text("Provide your location details").slideDown();
-                        $('.deliver').hide(500);
-                        $('.delivernot').hide(500);
-                        $('.customerdata').slideDown();
-                        alert("delivery will be in 15 minutes. Thank you for chhosing pizza hub")
-                    });
-                    $(".delivernot").click(function () {
-                        alert("Thank you for your purchase!!!")
+        //create a new object
+        // let myOrder = JSON.stringify(JSON.parse(newOrder));
 
-                    });
-                    $(function () {
-                        $.scrollify.move('#sum-order');
-                    });
-                });
+        //Write to the order
+        $('.summary').slideDown(2000);
+        $('.cdata-overlay').slideUp();
+        $('#list').slideDown();
+        $('.deliver').show(1000);
+        $('.delivernot').show(1000);
+
+        $('#list').text(" ");
+        $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
+            + newOrder.s + "<br>" + "Crust :     "
+            + newOrder.c + "<br>" + "Toppings :     "
+            + newOrder.t + "<br>" + " Number of pizzas :    "
+            + newOrder.n + "<br>" + "Total Price :  "
+            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+    });
+
+    //Deliver
+    $(".deliverhome").click(function () {
+        $('.summary').slideUp();
+        $('#list').slideUp();
+        $('.summary').text("Provide location details").slideDown();
+        $('.deliverhome').hide(1000);
+        $('.delivernot').hide(1000);
+        $('.cdata-overlay').slideDown();
+    //   alert("Your order will be delivered to your location.Please prepare ksh 150 for delivery.")
+    });
+    $(".deliver").click(function () {
+        alert("Your order will be delivered to your location.Please prepare ksh 150 for delivery.")
+    });
+
+
+    //Pick Up
+    $(".delivernot").click(function () {
+     alert("Thank you for shopping with us")
+    });
+
+    //Scrollify
+    $(function () {
+        $.scrollify.move('#sum-order');
+    });
+});
