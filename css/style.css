@@ -9,7 +9,7 @@
     background-color: black;
     color: white;
 } */
-.brandname{
+.navbar-brand{
     font-family: 'Mansalva', cursive;
     color: orange;
     padding-left: 10px;
@@ -34,12 +34,15 @@
     background-color: rgb(221, 221, 221);
     color: black;
   }
-.nav-item ul{
+/* .nav-item ul{
     display: flex;
-}
+} */
 .nav-list{
     margin-left:200px ;
-    cursor: pointer;
+    display: flex;
+    color: orange;
+
+
 }
 .nav-list ul li{
     padding: 50px 10px;
@@ -47,9 +50,7 @@
     list-style: none;
     font-weight: bold;
 }
-.logo-img{
-    width: 100px;
-}
+
 #home{
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/pizzab.jpg);
     background-size: cover;
@@ -63,6 +64,7 @@
 .landing-text{
     padding-right: 60px;
     padding-top: 200px;
+    padding-bottom: 120px;
     color: white;
     font-size: 300%;
     font-style: italic;
@@ -82,7 +84,7 @@
     margin-bottom: 40px;
 }
 .icons{
-    padding-top: 200px;
+    padding-top: 70px;
     text-align: center;
 }
 .fab{
@@ -100,6 +102,9 @@
     background-color:orange;
     height: 70vh;
 }
+.size{
+    height: 375px;
+}
 h5{
     text-align: center;
 }
@@ -113,9 +118,9 @@ h5{
     background-color: #000;
     color: white;
 }
-.form-layers{
+/* .form-layers{
     padding-left: 450px;
-}
+} */
 .contact-form{
     background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/piz.jpg);
     background-size: cover;
@@ -134,4 +139,65 @@ h5{
 .deliver .delivernot{
     border: 1px solid orange;
     border-radius: 30px 30px 0px 30px;  
-}
+ }
+
+ @media (min-width: 1400){
+    .carousel-item{
+        padding-left: 625px;
+    }
+ }
+
+ @media (max-width: 740px){
+        .landing{
+            margin-left: 230px;
+        }
+        .carousel-item{
+            padding-left: 90px;
+            padding-top: 5px;
+            height:150vh ;
+            padding-right: 75px;
+        }
+        .form-layers{
+            padding-left: 95px;
+        }
+    }
+    @media (max-width: 850px){
+     .landing{
+         margin-left: 80px;
+     }
+     .carousel-item{
+         padding-left: 100px;
+         height:100vh ;
+     }
+     .form-layers{
+        padding-left: 25px;
+      }
+   }
+   @media (max-width: 1060px){
+     .landing{
+         margin-left: 150px;
+     }
+     .carousel-item{
+         padding-left: 200px;
+         height:100vh ;
+     }
+     .form-layers{
+        padding-left: 281px;
+      }
+   }
+   @media (max-width: 1200px){
+    .carousel-item{
+        padding-left: 550px;
+    }
+    .landing-text{
+        text-align: center;
+    }
+    .landing{
+        margin-left: 350px;
+    }
+    .form-layers{
+        padding-left: 200px;
+      }
+   }
+
+   

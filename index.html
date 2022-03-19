@@ -21,24 +21,34 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
     <title>PIZZA HUB</title>
 </head>
 <body>
-    <!-- nav-bar -->
-    <div class="nav">
-        <div class="nav-item">
-            <div class="logo">
-              <!-- <img src="images/logo.png" alt="" class="logo-img"> -->
-              <p class="brandname">pizza hub</p>
-            </div>
-            <div class="nav-list">
-             <ul>
-                 <li><a href="#home">HOME</a></li>
-                 <li><a href="#menu">MENU</a></li>
-                 <li><a href="#orders">ORDERS</a></li>
-                 <li><a href="#contact">CONTACT US</a></li>
-             </ul>
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="background-color: #000;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white h4" href="#"> pizza hub</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <div class="nav-list">
+              <a class="nav-link active text-white h4" aria-current="page" href="#home">HOME</a>
+              <a class="nav-link text-white h4"href="#menu">MENU</a>
+              <a class="nav-link text-white h4"href="#orders">ORDERS</a>
+              <a class="nav-link text-white h4"href="#contact">CONTACT US</a>
 
-    </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </nav>
+
 
         <div id="home">
             <div class="landing">
@@ -50,19 +60,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
                 </p>
                 <a href="#orders"><button type="menu" class="btn">ORDER NOW</button></a>
             </div>
-                <!-- <div class="linear-image">
-                    <img src="images/piz1.jpeg" alt="" class="linear-image">
-                </div> -->
             </div>
-
-
-                <div class="icons">
-                    <a href=""><span class="fab fa-facebook icon_facebook"></span></a>
-                    <a href=""><span class="fab fa-twitter icon_twitter"></span></a>
-                    <a href=""><span class="fab fa-linkedin icon_linkedin"></span></a>
-                    <a href=""><span class="fab fa-instagram icon_instagram"></span></a>
-                    <a href=""><span class="fab fa-snapchat icon_snapchat"></span></a>
-                </div>
          </div>
     
         <div id="menu"> 
@@ -72,7 +70,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
               <div class="carousel-item active">
                 <div class="col-md-4">
                     <div class="card mb-2">
-                <img src="images/cheeseburger.jpeg" class="d-block w-100" alt="...">
+                <img src="images/cheeseburger.jpeg" class="d-block w-100 size" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">cheese burger</h5>
                   </div>
@@ -82,7 +80,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
               <div class="carousel-item"> 
                 <div class="col-md-4">
                     <div class="card mb-2">
-                <img src="images/chicken-hawaiian.jpeg" class="d-block w-100" alt="...">
+                <img src="images/chicken-hawaiian.jpeg" class="d-block w-100 size" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">chicken-hawaiian</h5>
                   </div>
@@ -104,7 +102,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
               <div class="carousel-item"> 
                 <div class="col-md-4">
                     <div class="card mb-2">
-                <img src="images/meatdeluxe.jpeg" class="d-block w-100" alt="...">
+                <img src="images/meatdeluxe.jpeg" class="d-block w-100 size" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">meat deluxe</h5>
                   </div>
@@ -174,8 +172,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
               </select>
             </div>
           </div>
-          <div class="col-md-6 order-overlay text-center">
-            <div class="mb-3">
+           <div class="col-md-6 col order-overlay text-center">
+             <div class="mb-3"> 
               <label for="number">Select Number of Pizza's to be ordered</label>
                 <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
             </div>
@@ -258,6 +256,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel=
 
 
                     <input type="submit" value="SEND" id="button">
+                    <div class="icons">
+                        <a href=""><span class="fab fa-facebook icon_facebook"></span></a>
+                        <a href=""><span class="fab fa-twitter icon_twitter"></span></a>
+                        <a href=""><span class="fab fa-linkedin icon_linkedin"></span></a>
+                        <a href=""><span class="fab fa-instagram icon_instagram"></span></a>
+                        <a href=""><span class="fab fa-snapchat icon_snapchat"></span></a>
+                    </div>
 
                 </form>
     </div>
