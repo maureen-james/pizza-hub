@@ -161,13 +161,14 @@ h5{
    }
    @media (max-width: 1200px){
     .carousel-item{
-        padding-left: 295px;
+        padding-left: 100px;
+        height:72vh ;
     }
     .landing-text{
         text-align: center;
     }
     .landing{
-        margin-left: 110px;
+        margin-left: 10px;
     }
     .form-layers{
         padding-left: 55px;

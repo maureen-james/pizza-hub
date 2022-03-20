@@ -264,7 +264,7 @@ $(function () {
     $(".deliverhome").click(function () {
         $('.summary').slideUp();
         $('#list').slideUp();
-        $('.summary').text("Provide location details").slideDown();
+        $('.summary').text("Provide location details in the below form").slideDown();
         $('.deliverhome').hide(1000);
         $('.delivernot').hide(1000);
         $('.cdata-overlay').slideDown();
